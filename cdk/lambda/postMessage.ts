@@ -23,5 +23,8 @@ exports.handler = async (event: any) => {
     body: JSON.stringify({
       message: "Posted successfully",
     }),
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    },
   };
 };
